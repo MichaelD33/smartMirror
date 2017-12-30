@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html class="sleep">
+  <head>
+    <meta charset="utf-8">
+    <title>MAGIC MIRROR</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+      <script type="text/javascript">
+      var images = ['0.gif', '1.gif', '2.gif', '3.gif', '4.gif', '5.gif', '6.gif', '7.gif', '8.gif', '9.gif'];
+      $('html.sleep').css({'background-image': 'url(displaySleep/' + images[Math.floor(Math.random() * images.length)] + ')'});
+      </script>
+    </head>
+    <body>
+    </body>
+
+</html>

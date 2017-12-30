@@ -1,0 +1,72 @@
+
+@font-face {
+    font-family: "ledFont";
+    src: url("./ledDisplayFont.ttf");
+
+}
+p.mirrorFont {
+    font-family: "ledFont", Verdana, Tahoma;
+    color: white;
+    font-size: 200%;
+    margin: 5px 50px 5px;
+
+
+}
+p.time {
+    font-family: "ledFont", Verdana, Tahoma;
+    color: white;
+    font-size: 300%;
+    margin: 5px 50px 5px;
+}
+p.mirrorFontSmall {
+    font-family: "ledFont", Verdana, Tahoma;
+    color: white;
+    font-size: 100%;
+    margin: 5px 50px 5px;
+
+
+}
+
+p.splashscreenText {
+    position: relative;
+    top: 50%;
+    font-family: "ledFont", Verdana, Tahoma;
+    color: white;
+    font-size: 300%;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+    p.splashscreenTextBottom {
+        position: relative;
+        top: 50%;
+        font-family: "ledFont", Verdana, Tahoma;
+        color: white;
+        font-size: 150%;
+        text-align: center;
+        transform: translateY(50%);
+
+}
+
+h3.news {
+    position: fixed;
+    top: 10;
+    right: 0;
+    font-family: "ledFont", Verdana, Tahoma;
+    color: white;
+}
+
+body.splashscreen {
+  background: url(./splashscreen.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+html.sleep{
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}

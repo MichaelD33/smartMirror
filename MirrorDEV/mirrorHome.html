@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<main>
+  <head>
+    <meta charset="utf-8">
+
+    <title> MAGIC MIRROR </title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="main.js"></script>
+  </head>
+  <body style="background-color:black">
+
+    <p id="clock" class="time"></p>
+    <script>
+    (function () {
+
+      var clockElement = document.getElementById( "clock" );
+
+      function updateClock ( clock ) {
+        clock.innerHTML = new Date().toLocaleTimeString();
+      }
+
+      setInterval(function () {
+          updateClock( clockElement );
+      }, 1000);
+
+    }());
+    </script>
+
+    <p class="mirrorFont">
+      <script type="text/javascript">
+        var currentTime = new Date()
+        var month = currentTime.getMonth() + 1
+        var day = currentTime.getDate()
+        var year = currentTime.getFullYear()
+        document.write(month + "/" + day + "/" + year)
+      </script>
+    </p>
+
+    <p class="mirrorFontSmall">Designed by Michael Delaney
+    </p>
+
+    <div>
+      <h3 id="publisher" class="news">Published by:</h3>
+    </div>
+      <div>
+        <h3 id="title" class="news">-----</h3>
+      </div>
+    <div>
+      <marquee>
+      <h3 id="description" class="news">-----</h3>
+      </marquee>
+    </div>
+
+
+      <div>
+        <h2 style="color:white">Current Weather</h2>
+      </div>
+      <div>
+        <h2 id="weather-location" style="color:white"></h2>
+      </div>
+      <div>
+        <h2 id="weather-current" style="color:white"></h2>
+      </div>
+       <div>
+        <h3 id="weather-high" style="color:white">High:</h3>
+      </div>
+      <div>
+        <h3 id="weather-low" style="color:white">Low:</h3>
+      </div>
+
+
+
+  </body>
+</main>
